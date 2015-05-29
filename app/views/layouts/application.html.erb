@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HackatonImdb</title>
+  <title>Hackathon Imdb</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+	<header class="container">
+		<nav class="navbar navbar-default">
+		<h1 class="center-textimg"> Hackhaton Imdb </h1>
+		</nav>
+	</header>
+
 <%= yield %>
 
+	<footer>
+		<center><small>
+            Todas las marcas registradas aquí mencionadas son propiedad de sus respectivos propietarios. 
+            ©2015 Ironhack Entertainment.
+        </small></center>
+	</footer>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>

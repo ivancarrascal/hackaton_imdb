@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+	margin: 0;
+	background-image: url(http://www.manuelcortes.fit/wp-content/uploads/2013/05/board-black-series-texture-background-wood-wallpaper-wood-texture-wallpapers-476.jpg);
+	background-attachment: fixed;  
+	background-size: cover;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+header{
+	margin-top: 1%;
+}
+
+.center-textimg{
+	display: block;
+	text-align: center;
+}
+
+.img-film{
+	height: 190px; width: 150px
+}
+
+.movie-list-title{
+	background-color: white;
+	margin-top: 1%;
+}

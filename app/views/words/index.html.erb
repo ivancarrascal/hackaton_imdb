@@ -1,17 +1,29 @@
-<h1> Hackatron IMDB </h1>
+<section class="container-fluid">
 
-<hr>
-Criterio: <%= @selectedWord.name %>
-<hr>
+	<div class="col-md-12 center-textimg movie-list-title">
+		<h3>Movie List</h3>
+		<h5>Criterio de busqueda: <mark><%= @selectedWord.name.upcase %></mark></h5>
+	</div>
 
-<% @findMovies.each do |movie| %>
 
-	<img src=<%= movie.poster %> style="height: 175px; width: 150px"> 
+	<hr>
+	<div class="col-md-1"></div>
+	<% @findMovies.each do |movie| %>
+		<div class="col-md-2 center-textimg">
+			<img src=<%= movie.poster %> class="img-film img-thumbnail" 
+				<% if movie.title === @filmCorrect.title %>
+					data-winner
+				<% end %>
+			> 
+		</div>
+	<% end %>
+	<div class="col-md-1"></div>
 
-<% end %>
-
-<hr>
+	<div class="col-md-12 center-textimg">
+		<pre><b>Pregunta:</b> <%= @wordQuestion.ask %> <%= @filmCorrect.year %>? <br><small>Por favor, click en la imagen cuya respuesta es correcta.</small></pre>
+	</div>
+</section>
+<!--<hr>
 Pelicula elegida: <%= @filmCorrect.title %> 
-<hr>
-Pregunta: <%= @wordQuestion.ask %> 
-<hr>
+<hr> -->
+
