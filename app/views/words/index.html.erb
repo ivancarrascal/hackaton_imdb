@@ -3,3 +3,15 @@
 <hr>
 Criterio: <%= @selectedWord.name %>
 <hr>
+
+<% @findMovies.each do |movie| %>
+
+	<img src=<%= movie.poster %> style="height: 175px; width: 150px"> 
+
+<% end %>
+
+<hr>
+Pelicula elegida: <%= @filmCorrect.title %> 
+<hr>
+Pregunta: <%= @wordQuestion.ask %> 
+<hr>

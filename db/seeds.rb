@@ -1,5 +1,5 @@
 Word.create name: "Love"
-Word.create name: "War"
+# Word.create name: "War"
 #Word.create name: "Death"
 
 Question.create ask: "Qué película se rodó en "
