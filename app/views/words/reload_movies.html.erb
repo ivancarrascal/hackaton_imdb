@@ -1,0 +1,15 @@
+	<div class="col-md-1"></div>
+	<% @findMovies.each do |movie| %>
+		<div class="col-md-2 center-textimg">
+			<img src=<%= movie.poster %> class="img-film img-thumbnail" 
+				<% if movie.title === @filmCorrect.title %>
+					data-winner
+				<% end %>
+			> 
+		</div>
+	<% end %>
+	<div class="col-md-1"></div>
+
+	<div class="col-md-12 center-textimg">
+		<pre><b>Pregunta:</b> <%= @wordQuestion.ask %> <%= @filmCorrect.year %>? <br><small>Por favor, click en la imagen cuya respuesta es correcta.</small></pre>
+	</div>

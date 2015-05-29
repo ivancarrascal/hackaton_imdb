@@ -27,16 +27,22 @@ header{
 	margin-top: 1%;
 }
 
+footer{
+	color: white;
+}
+
 .center-textimg{
 	display: block;
 	text-align: center;
 }
 
 .img-film{
-	height: 190px; width: 150px
+	height: 190px; width: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
+
 
 .movie-list-title{
 	background-color: white;
-	margin-top: 1%;
 }
